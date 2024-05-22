@@ -6,7 +6,7 @@ const SseComponent = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    const eventSource = new EventSource('http://localhost:8888/sse');
+    const eventSource = new EventSource('https://sse-demo-fmhypq480-asdfs-projects-22a69c19.vercel.app/sse');
 
     eventSource.onmessage = function(event) {
       const data = JSON.parse(event.data);
